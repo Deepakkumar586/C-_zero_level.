@@ -31,13 +31,13 @@ using namespace std;
 
 class Human {
 
-    public:
+   private:
     int height;
 
-     
+      public:
     int weight;
 
-    
+    private:
     int age;
 
     
@@ -52,7 +52,7 @@ class Human {
 
 };
 
-class Male: public Human {
+class Male: protected Human {
 
     public:
     string color;
@@ -61,9 +61,9 @@ class Male: public Human {
         cout << "Male Sleeping" << endl;
     }
 
-    // int getHeight() {
-    //     return this->height;
-    // }
+    int getHeight() {
+        return this->height;
+    }
 
 };
 
@@ -72,10 +72,12 @@ class Male: public Human {
 int main() {
 
     Male m1;
-    cout <<"Height is:" << m1.height << endl;
+    // cout <<"Height is:" << m1.height << endl;
+    cout <<"Height is:" << m1.getHeight() << endl;
+    // m1.getHeight();
 
 
-
+/*
 
     Male object1;
     cout << object1.age << endl;
@@ -87,6 +89,7 @@ int main() {
     object1.setWeight(84);
     cout << object1.weight << endl;
     object1.sleep();
+    */
     
 
     return 0;
