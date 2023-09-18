@@ -1,6 +1,6 @@
-// Encapsulation start
+// // Encapsulation start
 
-//#include <iostream>
+// #include <iostream>
 // using namespace std;
 
 // class Student{
@@ -13,10 +13,13 @@
 //     int getAge(){
 //         return this->age;
 //     }
+  
 // };
 // int main()
 // {
 //     Student first;
+//     first.name="deepak";
+//     // cout<<first.name<<endl;
 //     cout <<"Sab sahi chal rha hai" <<endl;
 
 // };
@@ -26,12 +29,12 @@
 
 
 // inheritance
-#include<iostream>
-using namespace std;
+ #include<iostream>
+ using namespace std;
 
 class Human {
 
-   private:
+  private:
     int height;
 
       public:
@@ -41,40 +44,41 @@ class Human {
     int age;
 
     
-    int getAge() {
-        return this->age;
-    }
-
-    void setWeight(int w) {
-        this->weight = w;
-
-    }
-
-};
-
-class Male: protected Human {
-
-    public:
-    string color;
-
-    void sleep() {
-        cout << "Male Sleeping" << endl;
-    }
-
     int getHeight() {
         return this->height;
     }
 
-};
+    void setHeight(int h) {
+        this->height = h;
+    }
+
+ };
+
+// class Male: protected Human {
+
+//     public:
+//     string color;
+
+//     void sleep() {
+//         cout << "Male Sleeping" << endl;
+//     }
+
+//     int getHeight() {
+//         return this->height;
+//     }
+
+// };
 
 
 
-int main() {
+ int main() {
 
-    Male m1;
-    // cout <<"Height is:" << m1.height << endl;
+    Human m1;
+    m1.setHeight(10);
+    //  cout <<"Height is:" << m1.height << endl;
     cout <<"Height is:" << m1.getHeight() << endl;
-    // m1.getHeight();
+    //  m1.getHeight();
+ }
 
 
 /*
@@ -92,6 +96,6 @@ int main() {
     */
     
 
-    return 0;
-}
+//     return 0;
+// }
 
