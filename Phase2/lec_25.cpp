@@ -75,8 +75,8 @@ int i = 9;
 
 
 // important concept
-int i = 9;
-int *n = &i;
+// int i = 9;
+// int *n = &i;
 // cout <<(*n)++ <<endl;
 
 
@@ -85,9 +85,31 @@ int *n = &i;
 // cout <<"Next interger is :" <<n <<endl;
 
 
-*n = *n + 1;
-cout <<"Value is: " <<*n <<endl;
-cout <<"After:"<<i <<endl;
+// *n = *n + 1;
+// cout <<"Value is: " <<*n <<endl;
+// cout <<"After:"<<i <<endl;
+
+
+
+
+
+
+// wild poineter use -- unintialized pointer are called wild pointer
+// int num = 67;
+// int *p;
+// cout <<p <<endl;
+
+
+
+
+// start expamplr
+
+int *p;
+int num = 67;
+p = &num;
+*p = 12;
+cout <<*p <<endl;
+
 
 
       
